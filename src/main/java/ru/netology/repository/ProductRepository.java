@@ -1,5 +1,7 @@
-package ru.netology.domain;
+package ru.netology.repository;
 
+
+import ru.netology.domain.Product;
 
 public class ProductRepository {
     private Product[] products = new Product[0];
@@ -16,7 +18,7 @@ public class ProductRepository {
     //показать все
     public Product[] findAll() {
 
-        return products;
+        return this.products;
     }
 
     //удалить по id
